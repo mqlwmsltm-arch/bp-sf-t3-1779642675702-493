@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · sf-t3-1779642675702-493</title>
+  <meta name="description" content="sf-t3-1779642675702-493에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-493.maphoshirts.today/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS Reset */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ font-size: 16px;
+ }
+ body {
+ font-family: 'Courier New', Courier, monospace;
+ background: #f5f5dc;
+ color: #1a1a1a;
+ line-height: 1.6;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ a {
+ color: #1a1a1a;
+ text-decoration: underline;
+ text-decoration-thickness: 3px;
+ text-underline-offset: 4px;
+ }
+ a:hover {
+ color: #d4af37;
+ text-decoration-color: #d4af37;
+ }
+ ul, ol {
+ list-style: none;
+ padding-left: 0;
+ }
+ /* Typography - Bold Raw */
+ h1 {
+ font-size: 4rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -2px;
+ line-height: 1;
+ margin-bottom: 1rem;
+ border-left: 8px solid #1a1a1a;
+ padding-left: 1rem;
+ }
+ h2 {
+ font-size: 2.5rem;
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ line-height: 1.2;
+ margin-bottom: 1.5rem;
+ border-bottom: 4px solid #1a1a1a;
+ padding-bottom: 0.5rem;
+ }
+ h3 {
+ font-size: 1.8rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: -0.5px;
+ line-height: 1.3;
+ margin-bottom: 1rem;
+ }
+ p {
+ font-size: 1.1rem;
+ margin-bottom: 1.5rem;
+ max-width: 700px;
+ }
+ .text-accent {
+ color: #d4af37;
+ font-weight: 900;
+ }
+ .text-small {
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ }
+ .text-skew {
+ transform: skewX(-10deg);
+ display: inline-block;
+ }
+ /* Layout - Asymmetric Full Bleed */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ header {
+ padding: 2rem 0;
+ border-bottom: 6px solid #1a1a1a;
+ background: #f5f5dc;
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: 1.1rem;
+ }
+ .nav-links a {
+ text-decoration: none;
+ }
+ .nav-links a:hover {
+ text-decoration: underline;
+ }
+ .hamburger-menu {
+ display: none;
+ font-size: 2rem;
+ cursor: pointer;
+ background: none;
+ border: none;
+ font-weight: 900;
+ }
+ .tel-link {
+ font-weight: 900;
+ font-size: 1.3rem;
+ text-decoration: none;
+ background: #1a1a1a;
+ color: #f5f5dc;
+ padding: 0.5rem 1rem;
+ border: 3px solid #1a1a1a;
+ }
+ .tel-link:hover {
+ background: #d4af37;
+ color: #1a1a1a;
+ }
+ .hero {
+ padding: 4rem 0;
+ border-bottom: 6px solid #1a1a1a;
+ }
+ .hero h1 {
+ font-size: 5rem;
+ }
+ .hero .subtitle {
+ font-size: 1.5rem;
+ font-weight: 700;
+ margin-bottom: 2rem;
+ }
+ .card-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 2rem;
+ padding: 3rem 0;
+ }
+ .card {
+ border: 4px solid #1a1a1a;
+ padding: 2rem;
+ background: #fff;
+ transition: all 0.2s;
+ }
+ .card:hover {
+ transform: scale(1.02);
+ box-shadow: 10px 10px 0 #1a1a1a;
+ }
+ .card h3 {
+ margin-bottom: 1rem;
+ }
+ .card p {
+ font-size: 1rem;
+ }
+ .cta-section {
+ padding: 4rem 0;
+ border-top: 6px solid #1a1a1a;
+ border-bottom: 6px solid #1a1a1a;
+ margin: 2rem 0;
+ background: #1a1a1a;
+ color: #f5f5dc;
+ }
+ .cta-section h2 {
+ border-bottom-color: #d4af37;
+ }
+ .cta-section a {
+ color: #d4af37;
+ }
+ footer {
+ padding: 2rem 0;
+ border-top: 6px solid #1a1a1a;
+ text-align: center;
+ font-size: 0.9rem;
+ }
+ footer .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-bottom: 1rem;
+ }
+ @media (max-width: 768px) {
+ .container {
+ padding: 0 1rem;
+ }
+ h1 {
+ font-size: 2.5rem;
+ border-left-width: 6px;
+ padding-left: 0.5rem;
+ }
+ h2 {
+ font-size: 1.8rem;
+ }
+ h3 {
+ font-size: 1.3rem;
+ }
+ .hero h1 {
+ font-size: 2.8rem;
+ }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ gap: 0.5rem;
+ padding: 1rem 0;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: block;
+ }
+ .card-grid {
+ grid-template-columns: 1fr;
+ gap: 1.5rem;
+ }
+ .card:hover {
+ transform: none;
+ box-shadow: 5px 5px 0 #1a1a1a;
+ }
+ footer .footer-links {
+ flex-direction: column;
+ gap: 0.5rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 · sf-t3-1779642675702-493">
+  <meta property="og:description" content="sf-t3-1779642675702-493에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-493.maphoshirts.today/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <nav>
+ <div style="font-weight: 900; font-size: 1.5rem; text-transform: uppercase;">마포 LLM</div>
+ <button class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/pricing">가격</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ 
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 1개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-002-ceyjyb.html">SEO 오토파일럿 가격 솔직 후기</a>
+        <p class="post-item__summary">최근 디지털 마케팅 업계에서 자동화 도구에 대한 관심이 뜨겁습니다. 특히 마포 지역의 여러 기업과 소상공인들 사이에서 검색 엔진 최적화를 자동으로 처리해 준다는 솔루션들이 주목받고 있습니다. 하지만</p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
